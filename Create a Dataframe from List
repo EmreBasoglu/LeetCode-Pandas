@@ -27,3 +27,9 @@ Output:
 +------------+-----+
 Explanation:
 A DataFrame was created on top of student_data, with two columns named student_id and age.
+import pandas as pd
+
+def createDataframe(student_data):
+    
+    df = pd.DataFrame(student_data, columns=["student_id", "age"])
+    return df
